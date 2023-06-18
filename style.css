@@ -63,6 +63,20 @@ header {
   color: var(--text-color);
   font-size: 1.5rem;
 }
+.nav i{
+  display: none;
+}
+@media(max-width:999px) {
+  .nav i {
+      display: block;
+      font-size: 2em;
+      border: 2px solid black;
+    }
+    .nav .left_items,
+    .right_items {
+      display: none;
+    }
+}
 .logo {
   font-size: 3rem;
   font-weight: 600;
@@ -528,4 +542,55 @@ footer {
 }
 .footer_last span {
   font-size: smaller;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  margin-left: 50%;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #7a62db;
+  z-index: 2;
+  cursor: pointer;
+}
+#overlay ul{
+  list-style: none;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20vh;
+  line-height: 1.5em;
+}
+
+#overlay ul li a {
+  color: white;
+}
+
+#overlay i{
+  font-size: 5em;
+  position: absolute;
+  right: 15px;
+  top:5px;
+}
+
+#text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+@media(max-width:999px){
+  #top-banner-slider{
+    display: none;
+  }
 }

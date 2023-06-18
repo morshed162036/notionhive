@@ -19,6 +19,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
+    <div id="overlay">
+      <i onclick="off()" class="bx bx-x" style="color: #ff0000"></i>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">What's New?</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#" class="contact_us">Contact Us</a></li>
+      </ul>
+      <div id="sidebar-menu"></div>
+    </div>
     <!--Start Header -->
     <header>
       <div class="nav container">
@@ -33,12 +45,13 @@
           <a href="#">Blog</a>
           <a href="#" class="contact_us">Contact Us</a>
         </div>
+        <i onclick="on()" class="bx bx-menu"></i>
       </div>
     </header>
     <!-- End Header -->
 
     <!-- Start Banner -->
-    <section>
+    <section id="top-banner-slider">
       <div>
         <div class="swiper banner-slider">
           <div class="swiper-wrapper">
@@ -49,29 +62,32 @@
           <div class="swiper-pagination"></div>
           <div class="banner-arrow">
             <div class="swiper-button-prev">
-              <i class='bx bx-arrow-back' style='color:#ffffff'></i>
+              <i class="bx bx-arrow-back" style="color: #ffffff"></i>
             </div>
             <div class="swiper-button-next">
-              <i class='bx bx-arrow-back bx-rotate-180' style='color:#ffffff'></i>
+              <i
+                class="bx bx-arrow-back bx-rotate-180"
+                style="color: #ffffff"
+              ></i>
             </div>
           </div>
         </div>
         <div class="swiper swiper_text">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <div class="content">
-                  <div>
-                    <h5>DESIGN & CREATIVE</h5>
-                    <span>10 June 2023</span>
-                  </div>
-                  <h1>Lorem, ipsum dolor sit amet consectetur</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-                    facere numquam pariatur, laudantium ea accusantium voluptatum rem
-                    praesentium?
-                  </p>
-                  <a href="#" class="read-more">Read More</a>
+              <div class="content">
+                <div>
+                  <h5>DESIGN & CREATIVE</h5>
+                  <span>10 June 2023</span>
                 </div>
+                <h1>Lorem, ipsum dolor sit amet consectetur</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Provident facere numquam pariatur, laudantium ea accusantium
+                  voluptatum rem praesentium?
+                </p>
+                <a href="#" class="read-more">Read More</a>
+              </div>
             </div>
             <div class="swiper-slide">
               <div class="content">
@@ -81,9 +97,9 @@
                 </div>
                 <h1>Lorem, ipsum dolor sit amet consectetur</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-                  facere numquam pariatur, laudantium ea accusantium voluptatum rem
-                  praesentium?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Provident facere numquam pariatur, laudantium ea accusantium
+                  voluptatum rem praesentium?
                 </p>
                 <a href="#" class="read-more">Read More</a>
               </div>
@@ -96,9 +112,9 @@
                 </div>
                 <h1>Lorem, ipsum dolor sit amet consectetur</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-                  facere numquam pariatur, laudantium ea accusantium voluptatum rem
-                  praesentium?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Provident facere numquam pariatur, laudantium ea accusantium
+                  voluptatum rem praesentium?
                 </p>
                 <a href="#" class="read-more">Read More</a>
               </div>
@@ -383,6 +399,7 @@ Your Message</textarea
         slidesPerView: 1,
         allowTouchMove: false,
       });
+
       var swiper = new Swiper(".banner-slider", {
         loop: true, //loop
         slidesPerView: 2, //number of slides to show
@@ -405,6 +422,15 @@ Your Message</textarea
           swiper: swiper_text,
         },
       });
+    </script>
+    <script>
+      function on() {
+        document.getElementById("overlay").style.display = "block";
+      }
+
+      function off() {
+        document.getElementById("overlay").style.display = "none";
+      }
     </script>
   </body>
 </html>
