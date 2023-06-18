@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Landing Page</title>
+    <!-- link to css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Box Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!--Start Header -->
+    <header>
+      <div class="nav container">
+        <div class="left_items">
+          <a href="#">About</a>
+          <a href="#">Service</a>
+          <a href="#">What's New?</a>
+        </div>
+        <div class="logo">ABCANDY</div>
+        <div class="right_items">
+          <a href="#">Community</a>
+          <a href="#">Blog</a>
+          <a href="#" class="contact_us">Contact Us</a>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Banner -->
+    <section>
+      <div>
+        <div class="swiper banner-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/sample_1.jpg" /></div>
+            <div class="swiper-slide"><img src="img/sample_2.jpg" /></div>
+            <div class="swiper-slide"><img src="img/sample_3.jpg" /></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="banner-arrow">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="swiper swiper_text">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p class="txt">
+                Some text for first slide<br />
+                Some text for first slide<br />
+                Some text for first slide<br />
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <p class="txt">
+                Some text for second slide<br />
+                Some text for second slide<br />
+                Some text for second slide<br />
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <p class="txt">
+                Some text for third slide<br />
+                Some text for third slide<br />
+                Some text for third slide<br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Banner -->
+
+    <!-- Start Blog -->
+    <section class="container">
+      <div class="blog_header">
+        <div class="menu-bar">
+          <h2>Blog</h2>
+          <div class="menu">
+            <a href="#">Sports</a>
+            <a href="#">Sports Car</a>
+            <a href="#">Bike</a>
+          </div>
+        </div>
+        <div class="search-container">
+          <button type="submit"><i class="bx bx-search"></i></button>
+          <input type="text" placeholder="Search.." name="search" />
+        </div>
+      </div>
+      <div class="blog_part1">
+        <div class="photo_slide">
+          <div class="image">
+            <div class="swiper sample-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/sample_1.jpg" /></div>
+                <div class="swiper-slide"><img src="img/sample_2.jpg" /></div>
+                <div class="swiper-slide"><img src="img/sample_3.jpg" /></div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <!-- <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div> -->
+            </div>
+          </div>
+          <div class="content">
+            <div>
+              <h5>DESIGN & CREATIVE</h5>
+              <span>10 June 2023</span>
+            </div>
+            <h1>Lorem, ipsum dolor sit amet consectetur</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              facere numquam pariatur, laudantium ea accusantium voluptatum rem
+              praesentium?
+            </p>
+            <span>by Jon Doe</span>
+          </div>
+        </div>
+        <div class="video_modal">
+          <div class="video">
+            <div>
+              <span>watch Now</span>
+              <i class="bx bx-play-circle"></i>
+            </div>
+          </div>
+          <div class="content">
+            <div>
+              <h5>DESIGN & CREATIVE</h5>
+              <span>10 June 2023</span>
+            </div>
+            <h1>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Accusamus voluptas
+            </h1>
+            <a href="#" class="play" id="openModalBtn">Watch Now</a>
+            <div class="video-container">
+              <span class="close">&#10006;</span>
+              <video src="video.mp4" controls></video>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blog_part2">
+        <!-- <img src="img/sample_3.jpg" alt="" class="part2-background" /> -->
+        <div class="part2-background">
+          <div class="aa">
+            <div class="inner">
+              <h1>Creative team, intutive solution</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
+                eius, commodi repudiandae, eveniet, est accusantium soluta
+                quaerat in reprehenderit ex inventore aperiam incidunt provident
+                sequi quis fugit. Perferendis, a molestias!
+              </p>
+              <a href="#" class="contact_us">Leat's Talk</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="center">
+          <div class="form-container">
+            <div class="form-container-head">
+              <div class="text">Contact us</div>
+              <span class="form-close">&#10006;</span>
+            </div>
+
+            <form action="#">
+              <div class="name-email">
+                <div>
+                  <label for="">Your Name</label>
+                  <input type="text" required />
+                </div>
+                <div>
+                  <label for="">Email</label>
+                  <input type="text" required />
+                </div>
+              </div>
+
+              <div class="data">
+                <label for="">Select Subject</label>
+                <select name="" id="">
+                  <option value="">Select Subject</option>
+                </select>
+              </div>
+              <div class="data">
+                <label for="">Your Message</label>
+                <textarea name="" id="" cols="30" rows="3">
+Your Message</textarea
+                >
+              </div>
+              <div class="data">
+                <a href="#" class="send-message">Send Message</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="blog_part3"></div>
+      <div class="blog_part4">
+        <div class="row" id="row">
+          <div class="photo_slide">
+            <div class="image">
+              <img src="img/sample_1.jpg" />
+            </div>
+            <div class="content">
+              <div>
+                <h5>DESIGN & CREATIVE</h5>
+                <span>10 June 2023</span>
+              </div>
+              <h1>Lorem, ipsum dolor sit amet consectetur</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident facere numquam pariatur, laudantium ea accusantium
+                voluptatum rem praesentium?
+              </p>
+              <span>by Jon Doe</span>
+            </div>
+          </div>
+          <div class="photo_slide">
+            <div class="image">
+              <img src="img/sample_2.jpg" />
+            </div>
+            <div class="content">
+              <div>
+                <h5>MARKETING</h5>
+                <span>10 June 2023</span>
+              </div>
+              <h1>Lorem, ipsum dolor sit amet consectetur</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident facere numquam pariatur, laudantium ea accusantium
+                voluptatum rem praesentium?
+              </p>
+              <span>by Jon Doe</span>
+            </div>
+          </div>
+          <div class="photo_slide">
+            <div class="image">
+              <img src="img/sample_3.jpg" />
+            </div>
+            <div class="content">
+              <div>
+                <h5>TOOLS</h5>
+                <span>10 June 2023</span>
+              </div>
+              <h1>Lorem, ipsum dolor sit amet consectetur</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident facere numquam pariatur, laudantium ea accusantium
+                voluptatum rem praesentium?
+              </p>
+              <span>by Jon Doe</span>
+            </div>
+          </div>
+        </div>
+        <div class="new-row"></div>
+        <a href="#" class="load-more">Load More</a>
+      </div>
+    </section>
+    <!-- End Blog -->
+
+    <!-- Start Footer -->
+    <footer>
+      <div class="footer container">
+        <div class="footer_first">
+          <h2>Connect with us</h2>
+          <div class="icon">
+            <i class="bx bxl-instagram"></i>
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-youtube"></i>
+            <i class="bx bxl-facebook"></i>
+          </div>
+        </div>
+        <div class="footer_last">
+          <span>© 2023 ABCandy Bangladesh Ltd.</span>
+          <div>
+            <a href="">Tearms of Use</a>
+            <span>&</span>
+            <a href="#">PrivacyPolicy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- link to js -->
+    <script src="main.js"></script>
+
+    <script>
+      var swiper = new Swiper(".sample-slider", {
+        loop: true, //loop
+        autoplay: {
+          //autoplay
+          delay: 2000,
+        },
+        pagination: {
+          //pagination(dots)
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          //navigation(arrow)
+          // nextEl: ".swiper-button-next",
+          // prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      const btn = document.querySelector(".play");
+      const close = document.querySelector(".close");
+      const videoContainer = document.querySelector(".video-container");
+
+      btn.addEventListener("click", () => {
+        videoContainer.classList.add("show");
+      });
+      close.addEventListener("click", () => {
+        videoContainer.classList.remove("show");
+      });
+    </script>
+    <script>
+      var form = document.querySelectorAll(".contact_us");
+      // const form = document.querySelector(".contact_us");
+      const form_close = document.querySelector(".form-close");
+      const formContainer = document.querySelector(".center");
+
+      form.forEach((single) => {
+        single.addEventListener("click", () => {
+          formContainer.classList.add("open");
+        });
+      });
+
+      form_close.addEventListener("click", () => {
+        formContainer.classList.remove("open");
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".load-more").click(function () {
+          $("#row").clone().appendTo(".new-row");
+        });
+      });
+    </script>
+
+    <script>
+      const swiper_text = new Swiper(".swiper_text", {
+        loop: true,
+        slidesPerView: 1,
+        allowTouchMove: false,
+      });
+      var swiper = new Swiper(".banner-slider", {
+        loop: true, //loop
+        slidesPerView: 2, //number of slides to show
+        centeredSlides: true, //put acctive slide center
+        spaceBetween: 20, //space between slides
+        autoplay: {
+          //autoplay
+          delay: 2000,
+        },
+        pagination: {
+          //pagination（dots）
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          //navigation（arrows）
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper_text,
+        },
+      });
+    </script>
+  </body>
+</html>
