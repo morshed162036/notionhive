@@ -158,10 +158,26 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-.blog_header .menu-bar > h2 {
+.blog_header .menu-bar>h2 {
   margin-right: 4rem;
   font-size: 3rem;
 }
+@media(max-width:999px) {
+  .blog_header {
+    display: block;
+  }
+    .blog_header .menu-bar {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .blog_header .menu-bar>h2 {
+      margin-bottom: 2rem;
+    }
+    .blog_header .menu-bar .menu{
+      margin-bottom: 2rem;
+    }
+}
+
 .blog_header .menu-bar .menu > a {
   margin: 0 0.5rem;
   padding: 1rem;
